@@ -16,6 +16,8 @@
 
 
 ```python
+{
+    "instances":
     # Batch dim
     [
         # Time dim
@@ -37,7 +39,7 @@
         ]
         ...
     ]
-
+}
 ```
 
 `features.json`中有若干带有时间戳的特征，请将其重新组装成需要的格式，并输入服务来获取预测值，`predictions_sample.json`中有部分预测结果供校验。模型时间维度的长度是`30`，结果参考`predictions_sample.json`的格式保存。
